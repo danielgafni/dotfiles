@@ -37,12 +37,16 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 \| endif
 
 call plug#begin()
-    Plug 'arcticicestudio/nord-vim'
-    Plug 'preservim/nerdtree'
-    Plug 'ryanoasis/vim-devicons'
+
+Plug 'arcticicestudio/nord-vim'
+Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+Plug 'smolck/command-completion.nvim'
+
 call plug#end()
 
 colorscheme nord
+lua require('command-completion').setup()
 
 nnoremap <C-t> :NERDTreeToggle<CR>
 
