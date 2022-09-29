@@ -3,7 +3,7 @@ export EDITOR=nvim
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/dan/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 
 # Set name of the theme to load --- if set to "random", it will
@@ -118,9 +118,9 @@ eval "$(pyenv init --path)"
 # the following to ~/.zshrc:
 
 eval "$(pyenv init -)"
-export PATH="/home/dan/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 export PATTH="$HOME/.cargo/env:$PATH"
 eval "$(starship init zsh)"
 
+export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring
 
-source /home/dan/.config/broot/launcher/bash/br
