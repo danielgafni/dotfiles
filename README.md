@@ -1,5 +1,15 @@
 # Dotfiles
 
+This repository contains my personal configuration files for various Linux apps & tools:
+
+ - zsh
+ - neovim
+ - alacritty
+ - zellij
+ - starship
+
+All the colors & theming is set to Nord Theme.
+
 # Installation
 
 Run 
