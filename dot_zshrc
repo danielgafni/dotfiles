@@ -124,3 +124,4 @@ eval "$(starship init zsh)"
 
 export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring
 
+alias zj="zellij"
