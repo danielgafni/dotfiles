@@ -1,0 +1,3 @@
+pulseaudio --start &
+dunst &
+waybar &

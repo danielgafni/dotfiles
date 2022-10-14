@@ -42,6 +42,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'smolck/command-completion.nvim'
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
 call plug#end()
 
@@ -49,4 +50,8 @@ colorscheme nord
 lua require('command-completion').setup()
 
 nnoremap <C-t> :NERDTreeToggle<CR>
+
+" vim-hexokinase
+set termguicolors
+let g:Hexokinase_ftEnabled = ['css', 'html', 'javascript']
 

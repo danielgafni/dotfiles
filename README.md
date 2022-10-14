@@ -7,8 +7,11 @@ This repository contains my personal configuration files for various Linux apps 
  - alacritty
  - zellij
  - starship
+ - btop
+ - waybar
+ - hyprland
 
-All the colors & theming is set to Nord Theme.
+All the colors & theming are Nord.
 
 # Installation
 
