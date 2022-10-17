@@ -1,8 +1,8 @@
 {
 	"layer": "top",
-	"modules-left": ["custom/launcher", "wlr/workspaces", "cpu", "memory", "tray"],
+	"modules-left": ["custom/launcher", "wlr/workspaces", "tray"],
 	"modules-center": ["hyprland/window"],
-	"modules-right": ["pulseaudio", "clock"],
+	"modules-right": ["cpu", "memory", "pulseaudio", "clock"],
 	"sway/language": {
         "format": "{short} {variant}"
     },
@@ -11,7 +11,8 @@
 		"scroll-step": 5,
 		"format": "{icon} {volume}%",
 		"format-muted": "{icon} {volume}%",
-		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click": "pavucontrol",
+//		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
 		"format-icons": {
 			"default": ["", "", ""]
 		}
