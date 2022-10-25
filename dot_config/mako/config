@@ -9,12 +9,12 @@ height=150
 max-icon-size=64
 default-timeout=10000
 
-background-color=#2e3440B3
+background-color=#2e3440
 text-color=#e5e9f0
 border-color=#ebcb8B
 
 [urgency=low]
-background-color=#2e3440E5
+background-color=#2e3440
 text-color=#5e81ac
 border-color=#ebcb8b
 
@@ -22,7 +22,7 @@ border-color=#ebcb8b
 # on-notify=exec mpv ~/sounds/notification.ogg
 
 [urgency=high]
-background-color=#2e3440E5
+background-color=#2e3440
 text-color=#88c0d0
 border-color=#ebcb8b
 on-notify=exec mpv ~/sounds/notification.ogg
