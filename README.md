@@ -37,5 +37,9 @@ or
 To install the system packages, run:
 
 ```shell
-paru -S zsh neovim kitty bat ranger zellij-git starship-git btop nerd-fonts-fira-code nordic-theme nordzy-cursors nordzy-icon-theme-git grim-git slurp sway hyprland-git hyprpaper-git wlogout-git swaylock-effects-git wlrobs-hg mako-git waybar-hyprland-git 
+paru -S zsh neovim kitty bat ranger zellij-git starship-git btop nerd-fonts-fira-code nordic-theme nordzy-cursors nordzy-icon-theme-git grim-git slurp sway hyprland-git hyprpaper-git wlogout-git swayidle swaylock-effects-git wlrobs-hg mako-git waybar-hyprland-git 
 ```
+
+# Screenshots
+
+![screenshots/terminals.png](terminals)
