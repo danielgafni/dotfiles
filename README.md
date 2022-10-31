@@ -42,4 +42,4 @@ paru -S zsh neovim kitty bat ranger zellij-git starship-git btop nerd-fonts-fira
 
 # Screenshots
 
-![screenshots/terminals.png](terminals)
+![terminals](./screenshots/terminals.png)
