@@ -98,6 +98,7 @@
     padding-left: 0.6em;
     padding-right: 0.6em;
 }
+#custom-wlogout,
 
 /* Each module that should blink */
 #mode,
@@ -171,7 +172,7 @@
 }
 
 #workspaces button.active {
-    background: #88C0D0;
+    background: @nord_green;
     color: @nord_light_font;
     opacity: 1;
     padding: 0 0.4em;
@@ -283,6 +284,10 @@
 
 #clock.time {
     background: @mode;
+}
+#custom-wlogout {
+    background: @nord_bg_blue;
+    padding: 7px;
 }
 
 #pulseaudio { /* Unsused but kept for those who needs it */

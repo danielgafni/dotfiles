@@ -1,8 +1,8 @@
 {
 	"layer": "top",
-	"modules-left": ["custom/launcher", "wlr/workspaces", "tray"],
+	"modules-left": ["custom/launcher", "wlr/workspaces", "wlr/taskbar", "tray"],
 	"modules-center": ["hyprland/window"],
-	"modules-right": ["cpu", "memory", "pulseaudio", "clock"],
+	"modules-right": ["cpu", "memory", "pulseaudio", "clock", "custom/wlogout"],
 	"sway/language": {
         "format": "{short} {variant}"
     },
@@ -20,16 +20,25 @@
     "wlr/workspaces": {
         "format": "{icon}",
         "on-click": "activate",
+        "all-outputs": true,
         "format-icons": {
-            "1": "1",
-            "2": "2",
-            "3": "3",
-            "4": "4",
-            "5": "5",
-            "urgent": "",
-            "active": "",
-            "default": ""
+            "1": "web",
+            "2": "msg",
+            "3": "dev",
+            "4": "sys",
+            "5": "idk",
+            "urgent": ""
+//            "active": "",
+//            "default": ""
         }
+    },
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 14,
+        "icon-theme": "Nordzy-purple-dark",
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-right": "close"
     },
 
 	"network": {
@@ -67,13 +76,13 @@
         "interval": 5,
         "format": " {}%",
         "max-length": 10,
-        "on-click": "alacritty -e btop"
+        "on-click": "kitty -e btop"
     },
     "memory": {
         "interval": 5,
         "format": " {}%",
         "max-length": 10,
-        "on-click": "alacritty -e btop"
+        "on-click": "kitty -e btop"
     },
 //    "custom/media": {
 //        "interval": 30,
@@ -93,9 +102,14 @@
         "on-click": "wofi --show drun",
         "on-click-right": "killall wofi"
     },
-    "custom/power":{
-        "format": " ",
-        "on-click": "bash ~/.config/rofi/leave/leave.sh"
+//    "custom/power":{
+//        "format": " ",
+//        "on-click": "bash ~/.config/rofi/leave/leave.sh"
+//    },
+    "custom/wlogout": {
+        "format": "",
+        "interval": "once",
+        "on-click": "wlogout"
     },
     "custom/updates":{
         "format": "{} Update(s)",
