@@ -1,11 +1,35 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
+continuation_prompt = "[▶▶▶](bold blue)"
+add_newline = false
 
 # Disable the package module, hiding it from the prompt completely
 [package]
-disabled = true
+symbol = " "
 
 [aws]
 disabled = true
+
+[gcloud]
+disabled = true
+
+[python]
+symbol = " "
+
+[directory]
+read_only = " "
+
+[docker_context]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[rust]
+symbol = " "
+
 

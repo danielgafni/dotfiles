@@ -70,7 +70,7 @@
 #waybar {
     background: @bg;
     color: @light;
-    font-family: "Fira Code Nerd Font Mono";
+    font-family: "Fira Code Nerd Font";
     font-size: 13px;
     font-weight: bold;
     border-radius: 0px;
@@ -288,6 +288,7 @@
 #custom-wlogout {
     background: @nord_bg_blue;
     padding: 7px;
+    padding-right: 10px;
 }
 
 #pulseaudio { /* Unsused but kept for those who needs it */

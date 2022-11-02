@@ -43,6 +43,7 @@ Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'smolck/command-completion.nvim'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+Plug 'elkowar/yuck.vim'
 
 call plug#end()
 
