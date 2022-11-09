@@ -1,5 +1,5 @@
 * {
-	font-family: "Fira Code Nerd Font Mono", monospace;
+	font-family: "Fira Code Nerd Font", "Font Awesome";
     font-weight: bold;
     font-size: 14px;
 }
@@ -9,6 +9,7 @@
 
 window {
 	background-color: #3B4252;
+    border-radius: 10px
 }
 
 #input {

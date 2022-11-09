@@ -1,3 +1,5 @@
+@import "../nord_colors.css";
+
 
 @keyframes blink-warning {
     70% {
@@ -68,10 +70,9 @@
 
 /* The whole bar */
 #waybar {
-    background: @bg;
-    color: @light;
-    font-family: "Fira Code Nerd Font";
-    font-size: 13px;
+    background-color: @bg;
+    font-family: "Fira Code", "Font Awesome";
+    font-size: 14px;
     font-weight: bold;
     border-radius: 0px;
 }
@@ -79,15 +80,13 @@
 /* Each module */
 #battery,
 #clock,
-#cpu,
+/* #cpu, */
 #custom-launcher,
 #custom-layout,
 #memory,
 #mode,
 #network,
-#pulseaudio,
 #temperature,
-#custom-alsa,
 #custom-pacman,
 #custom-weather,
 #custom-gpu,
@@ -158,29 +157,28 @@
 /* Workspaces stuff */
 
 #workspaces {
-    color: #D8DEE9;
     margin-right: 10px;
-    background: @nord_bg_blue;
+    background-color: transparent;
 }
 
 #workspaces button {
     font-weight: bold; /* Somewhy the bar-wide setting is ignored*/
     padding: 0;
     opacity: 1;
-    color: @nord_light_font;
-    background: none;
 }
 
 #workspaces button.active {
-    background: @nord_green;
-    color: @nord_light_font;
+    color: @green;
     opacity: 1;
     padding: 0 0.4em;
+    background: @green;
+    border-color: @green;
+    border-radius: 10px;
 }
 
 #workspaces button.urgent {
-    border-color: #c9545d;
-    color: #c9545d;
+    border-color: @red;
+    color: @red;
     opacity: 1;
 }
 
@@ -224,24 +222,26 @@
     font-weight: bold;
     padding: 0 0.6em;
 }
-#custom-alsa {
-    background: @nord_bg_blue;
-}
 
 #network {
     background: @nord_bg_blue;
 }
 
 #memory {
-    background: @nord_bg_blue;
+    background: transparent;
+    color: @blue;
 }
 
 #cpu {
-    background: @nord_bg_blue;
-    color: #D8DEE9;
+    background: transparent;
+    color: @green;
 }
+#cpu.warning {
+    color: @yellow;
+}
+
 #cpu.critical {
-    color: @nord_dark_font;
+    color: @red;
 }
 #language {
     background: @nord_bg_blue;
@@ -257,10 +257,10 @@
 }
 #temperature {
     background-color: @nord_bg;
-    color: #D8DEE9;
+    color: @green;
 }
 #temperature.critical {
-    background:  @critical;
+    background:  @red;
 }
 #custom-layout {
     background: @layout;
@@ -275,8 +275,8 @@
 }
 
 #clock {
-    background: @nord_bg_blue;
-    color: #D8DEE9;
+    background: transparent;
+    color: @frost1;
 }
 #clock.date {
     background: @date;
@@ -286,27 +286,28 @@
     background: @mode;
 }
 #custom-wlogout {
-    background: @nord_bg_blue;
+    background: transparent;
     padding: 7px;
     padding-right: 10px;
+    color: @red;
 }
 
 #pulseaudio { /* Unsused but kept for those who needs it */
-    background: @nord_bg_blue;
-    color: #D8DEE9;
+    background: transparent;
+    color: @violet;
 }
 
 #pulseaudio.muted {
-    background: #BF616A;
-    color: #BF616A;
+    background: transparent;
+    color: @red;
     /* No styles */
 }
 #pulseaudio.source-muted {
-    background: #D08770;
-    color: #D8DEE9;
+    background: transparent;
+    color: @orange;
     /* No styles */
 }
 #tray {
-    background: @nord_bg_blue;
+    background: @bg;
 
 }

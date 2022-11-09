@@ -2,7 +2,7 @@
 	"layer": "top",
 	"modules-left": ["custom/launcher", "wlr/workspaces", "wlr/taskbar", "tray"],
 	"modules-center": ["hyprland/window"],
-	"modules-right": ["cpu", "memory", "pulseaudio", "clock", "custom/wlogout"],
+	"modules-right": ["memory", "cpu", "pulseaudio", "clock", "custom/wlogout"],
 	"sway/language": {
         "format": "{short} {variant}"
     },
@@ -49,7 +49,7 @@
 	"backlight": {
 		"tooltip": false,
 		"format": " {}%",
-		"interval":1,
+		"interval": 1,
         "on-scroll-up": "light -A 5",
 		"on-scroll-down": "light -U 5"
 	},
@@ -116,7 +116,7 @@
         "exec": "checkupdates | wc -l",
         "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
         "interval": 15,
-        "on-click": "alacritty --title='fly_is_alacritty' --hold paru && notify-send 'The system has been updated' "
+        "on-click": "kitty --title='fly_is_alacritty' --hold paru && notify-send 'The system has been updated' "
     },
     "custom/wallpaper":{
         "format":" ",

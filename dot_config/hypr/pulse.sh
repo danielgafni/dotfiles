@@ -1,6 +1,7 @@
 #!/bin/bash
 
-sleep 8
-pulseaudio -k
-pulseaudio --start
+sleep 12
+
+systemctl --user start pulseaudio
+systemctl --user stop pulseaudio
 

@@ -43,3 +43,7 @@ paru -S zsh neovim kitty bat ranger ranger_devicons-git zellij-git starship-git 
 # Screenshots
 
 ![terminals](./screenshots/terminals.png)
+
+# gaf
+
+`gaf` is my CLI tool made for running commands related to these dotfiles. It's currently under development.
