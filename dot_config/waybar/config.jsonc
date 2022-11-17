@@ -1,11 +1,9 @@
 {
 	"layer": "top",
-	"modules-left": ["custom/launcher", "wlr/workspaces", "wlr/taskbar", "tray"],
-	"modules-center": ["hyprland/window"],
-	"modules-right": ["memory", "cpu", "pulseaudio", "clock", "custom/wlogout"],
-	"sway/language": {
-        "format": "{short} {variant}"
-    },
+    "icon-theme": "Nordzy-dark",
+	"modules-left": ["custom/wlogout", "wlr/taskbar", "tray"],
+	"modules-center": ["wlr/workspaces"],
+	"modules-right": ["memory", "cpu", "pulseaudio", "clock"],
 	"pulseaudio": {
 		"tooltip": false,
 		"scroll-step": 5,
@@ -34,8 +32,8 @@
     },
     "wlr/taskbar": {
         "format": "{icon}",
-        "icon-size": 14,
-        "icon-theme": "Nordzy-purple-dark",
+        "icon-size": 30,
+        "icon-theme": "Nordzy-dark",
         "tooltip-format": "{title}",
         "on-click": "activate",
         "on-click-right": "close"
@@ -66,11 +64,14 @@
         "format-icons": ["", "", "", "", ""]
     },
 	"tray":{
-		"icon-size":18,
-		"spacing": 10
+		"icon-size": 24,
+		"spacing": 10,
+        "icon-theme": "Nordzy-dark"
 	},
     "clock": {
-        "format": "{: %I:%M %p   %d/%m/%Y}"
+        "format": "{: %I:%M %p}",
+        "timezone": "Europe/Podgorica",
+        "on-click": ""  // tmp bugfix
     },
     "cpu": {
         "interval": 5,
@@ -84,28 +85,11 @@
         "max-length": 10,
         "on-click": "kitty -e btop"
     },
-//    "custom/media": {
-//        "interval": 30,
-//        "format": "{icon} {}",
-//        "return-type": "json",
-//        "max-length": 20,
-//        "format-icons": {
-//            "spotify": " ",
-//            "default": " "
-//        },
-//        "escape": true,
-//        "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
-//        "on-click": "playerctl play-pause"
-//    },
     "custom/launcher":{
         "format": " ",
         "on-click": "wofi --show drun",
         "on-click-right": "killall wofi"
     },
-//    "custom/power":{
-//        "format": " ",
-//        "on-click": "bash ~/.config/rofi/leave/leave.sh"
-//    },
     "custom/wlogout": {
         "format": "",
         "interval": "once",
@@ -117,9 +101,5 @@
         "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
         "interval": 15,
         "on-click": "kitty --title='fly_is_alacritty' --hold paru && notify-send 'The system has been updated' "
-    },
-    "custom/wallpaper":{
-        "format":" ",
-        "on-click": "bash ~/.config/system_scripts/pkill_bc"
     }
 }

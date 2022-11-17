@@ -2,7 +2,7 @@
 
 This repository contains my personal configuration files for various Linux apps & tools.
 
-The setup is made for Wayland with Hyprland.
+The setup is made for Wayland with Hyprland (for Nvidia).
 
  - zsh  # shell
  - neovim  # text editor
@@ -37,13 +37,17 @@ or
 To install the system packages, run:
 
 ```shell
-paru -S zsh neovim kitty bat ranger ranger_devicons-git zellij-git starship-git btop nerd-fonts-fira-code nerd-fonts-complete-starship nordic-theme nordzy-cursors nordzy-icon-theme-git grim-git slurp sway hyprland-git hyprpaper-git wlogout-git swayidle swaylock-effects-git wlrobs-hg mako-git waybar-hyprland-git 
+paru -S zsh neovim kitty bat ranger ranger_devicons-git zellij-git starship-git btop nerd-fonts-fira-code nerd-fonts-complete-starship nordic-theme nordzy-cursors nordzy-icon-theme-git grim-git slurp sway hyprland-nvidia-git hyprpaper-git wlogout-git swayidle swaylock-effects-git wlrobs-hg mako-git waybar-hyprland-git 
 ```
 
 # Screenshots
 
 ![terminals](./screenshots/terminals.png)
 
-# gaf
+# `gaf`
 
 `gaf` is my CLI tool made for running commands related to these dotfiles. It's currently under development.
+
+# Wallpapers
+
+ - [Magic Tree](http://wallpaperswide.com/magical_tree_fantasy_art-wallpapers.html) (converted with the Python tool `image-go-nord`)

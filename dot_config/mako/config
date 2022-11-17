@@ -1,12 +1,12 @@
-font=Fira Code Nerd Font Mono 13
+font=Fira Code Nerd Font Mono 24
 border-size=2
 
 margin=2,4
 padding=2
 
-width=350
-height=150
-max-icon-size=64
+width=700
+height=300
+max-icon-size=128
 default-timeout=10000
 
 background-color=#2e344099

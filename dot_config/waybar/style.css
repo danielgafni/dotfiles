@@ -1,6 +1,3 @@
-@import "../nord_colors.css";
-
-
 @keyframes blink-warning {
     70% {
         color: @light;
@@ -31,55 +28,102 @@
 /* COLORS */
 
 /* Nord */
-@define-color bg #2E3440;
-/*@define-color bg #353C4A;*/
 @define-color light #D8DEE9;
 /*@define-color dark @nord_dark_font;*/
 @define-color warning #ebcb8b;
 @define-color critical #BF616A;
 @define-color mode #434C5E;
-/*@define-color workspaces @bg;*/
-/*@define-color workspaces @nord_dark_font;*/
-/*@define-color workspacesfocused #434C5E;*/
-@define-color workspacesfocused #4C566A;
-@define-color tray @workspacesfocused;
-@define-color sound #EBCB8B;
-@define-color network #5D7096;
-@define-color memory #546484;
-@define-color cpu #596A8D;
-@define-color temp #4D5C78;
 @define-color layout #5e81ac;
 @define-color battery #88c0d0;
-@define-color date #434C5E;
-@define-color time #434C5E;
 @define-color backlight #434C5E;
-@define-color nord_bg #434C5E;
-@define-color nord_bg_blue #546484;
-@define-color nord_light #D8DEE9;
-@define-color nord_light_font #D8DEE9;
-@define-color nord_dark_font #434C5E;
-@define-color nord_green #A3BE8C;
+
+/* Polar Night */
+@define-color nord0 #2E3440;
+@define-color nord1 #3B4252;
+@define-color nord2 #434C5E;
+@define-color nord3 #4C566A;
+/* Snow Storm */
+@define-color nord4 #D8DEE9;
+@define-color nord5 #E5E9F0;
+@define-color nord6 #ECEFF4;
+/* Frost */
+@define-color nord7 #8FBCBB;
+@define-color nord8 #88C0D0;
+@define-color nord9 #81A1C1;
+@define-color nord10 #5E81AC;
+/* Aurora */
+@define-color nord11 #BF616A;
+@define-color nord12 #D08770;
+@define-color nord13 #EBCB8B;
+@define-color nord14 #A3BE8C;
+@define-color nord15 #B48EAD;
+
+/* Quick Access */
+@define-color bg @nord0;
+@define-color fg @nord4;
+
+@define-color red @nord11;
+@define-color orange @nord12;
+@define-color yellow @nord13;
+@define-color green @nord14;
+@define-color blue @nord10;
+@define-color violet @nord15;
+
+@define-color night0 @nord0;
+@define-color night1 @nord1;
+@define-color night2 @nord2;
+@define-color night3 @nord3;
+
+@define-color snow0 @nord4;
+@define-color snow1 @nord5;
+@define-color snow2 @nord6;
+
+@define-color frost0 @nord7;
+@define-color frost1 @nord8;
+@define-color frost2 @nord9;
+@define-color frost3 @nord10;
+
+@define-color aurora0 @nord11;
+@define-color aurora1 @nord12;
+@define-color aurora2 @nord13;
+@define-color aurora3 @nord14;
+@define-color aurora4 @nord15;
 
 /* Reset all styles */
 * {
     border: none;
     border-radius: 10px;
     min-height: 0;
-    margin: 2px 6px 2px 6px;
+    margin: 1px 6px 1px 6px;
 }
 
 /* The whole bar */
 #waybar {
-    background-color: @bg;
+    background-color: rgba(46, 52, 64, 0.7);
+    color: @fg;
     font-family: "Fira Code", "Font Awesome";
-    font-size: 14px;
+    font-size: 22px;
     font-weight: bold;
     border-radius: 0px;
 }
 
+/* indicators */
+#memory,
+#cpu,
+#pulseaudio,
+#clock {
+    border-radius: 0px;
+    border-style: solid none solid none;
+    border-color: @night1;
+    border-width: 2px;
+    margin-right: 0px;
+    margin-left: 0px;
+
+}
+
 /* Each module */
 #battery,
-#clock,
+/* #clock, */
 /* #cpu, */
 #custom-launcher,
 #custom-layout,
@@ -91,12 +135,7 @@
 #custom-weather,
 #custom-gpu,
 #tray,
-#backlight,
 #language,
-#custom-cpugovernor {
-    padding-left: 0.6em;
-    padding-right: 0.6em;
-}
 #custom-wlogout,
 
 /* Each module that should blink */
@@ -143,51 +182,69 @@
 }
 
 /* And now modules themselves in their respective order */
-#custom-launcher {
-    font-size: 20px;
-    color: #88C0D0;
-    padding: 0px;
+
+#custom-wlogout {
+    padding: 7px;
+    padding-right: 10px;
+    color: @red;
+    border-color: @night1;
+    border-width: 2px;
+    border-style: solid;
 }
 
-#mode { /* Shown current Sway mode (resize etc.) */
-    color: @light;
-    background: @mode;
+/* taskbar */
+#taskbar {
+    border-color: @night1;
+    border-width: 2px;
+    border-style: solid;
 }
 
+#taskbar button:hover {
+    background-color: @frost2;
+}
+
+#tray {
+    border-color: @night1;
+    border-width: 2px;
+    border-style: solid;
+}
 /* Workspaces stuff */
 
 #workspaces {
     margin-right: 10px;
-    background-color: transparent;
+    border-color: @night1;
+    border-width: 2px;
+    border-style: solid;
 }
 
 #workspaces button {
     font-weight: bold; /* Somewhy the bar-wide setting is ignored*/
     padding: 0;
-    opacity: 1;
+}
+
+#workspaces button:hover {
+    background-color: @frost2;
 }
 
 #workspaces button.active {
     color: @green;
-    opacity: 1;
     padding: 0 0.4em;
-    background: @green;
     border-color: @green;
-    border-radius: 10px;
 }
 
 #workspaces button.urgent {
     border-color: @red;
     color: @red;
-    opacity: 1;
 }
 
 #window {
     margin-right: 40px;
     margin-left: 40px;
     font-weight: bold;
-    font-size: 13;
+    font-size: 22px;
 }
+
+/*
 #bluetooth {
     background: @nord_bg_blue;
     font-size: 1.2em;
@@ -218,7 +275,6 @@
 }
 #idle_inhibitor {
     background: @mode;
-    /*font-size: 1.6em;*/
     font-weight: bold;
     padding: 0 0.6em;
 }
@@ -227,7 +283,12 @@
     background: @nord_bg_blue;
 }
 
+*/
+
 #memory {
+    /* it's the most left indicator */
+    border-radius: 10px 0px 0px 10px;
+    border-style: solid none solid solid;
     background: transparent;
     color: @blue;
 }
@@ -244,70 +305,35 @@
     color: @red;
 }
 #language {
-    background: @nord_bg_blue;
-    color: #D8DEE9;
     padding: 0 0.4em;
 }
-#custom-cpugovernor {
-    background-color: @nord_light;
-    color: @nord_dark_font;
-}
-#custom-cpugovernor.perf {
-    
-}
 #temperature {
-    background-color: @nord_bg;
     color: @green;
 }
 #temperature.critical {
-    background:  @red;
-}
-#custom-layout {
-    background: @layout;
+    color:  @red;
 }
 
-#battery {
-    background: @battery;
-}
-
-#backlight {
-    background: @backlight;
-}
-
-#clock {
-    background: transparent;
-    color: @frost1;
-}
-#clock.date {
-    background: @date;
-}
-
-#clock.time {
-    background: @mode;
-}
-#custom-wlogout {
-    background: transparent;
-    padding: 7px;
-    padding-right: 10px;
-    color: @red;
-}
-
-#pulseaudio { /* Unsused but kept for those who needs it */
-    background: transparent;
+#pulseaudio {
     color: @violet;
 }
 
 #pulseaudio.muted {
-    background: transparent;
     color: @red;
     /* No styles */
 }
 #pulseaudio.source-muted {
-    background: transparent;
     color: @orange;
     /* No styles */
 }
-#tray {
-    background: @bg;
 
+#clock {
+   /* it's the most right indicator */
+    border-radius: 0px 10px 10px 0px;
+    border-style: solid solid solid none;
+    color: @frost0;
 }
+#clock.time {
+    color: @frost0;
+}
+
