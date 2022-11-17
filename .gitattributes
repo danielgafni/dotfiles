@@ -1,2 +1,0 @@
-*.png filter=lfs diff=lfs merge=lfs -text
-dot_config/wallpapers/tree_UHD.jpg filter=lfs diff=lfs merge=lfs -text
