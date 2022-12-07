@@ -5,6 +5,7 @@ This repository contains my personal configuration files for various Linux apps 
 The setup is made for Wayland with Hyprland (for Nvidia).
 
  - zsh  # shell
+ - sheldon # shell plugin manager
  - neovim  # text editor
  - alacritty  # terminal emulator
  - kitty  # terminal emulator
@@ -51,3 +52,8 @@ paru -S zsh neovim kitty bat ranger ranger_devicons-git zellij-git starship-git 
 # Wallpapers
 
  - [Magic Tree](http://wallpaperswide.com/magical_tree_fantasy_art-wallpapers.html) (converted with the Python tool `image-go-nord`)
+
+ # Troubleshooting notes
+
+ - [Default pulseaudio devices](https://askubuntu.com/questions/14077/how-can-i-change-the-default-audio-device-from-command-line)
+

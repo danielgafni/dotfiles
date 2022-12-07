@@ -59,7 +59,7 @@
 @define-color nord15 #B48EAD;
 
 /* Quick Access */
-@define-color bg @nord0;
+@define-color bg rgba(46, 52, 64, 0.7);  /* nord0 but with transparency */
 @define-color fg @nord4;
 
 @define-color red @nord11;
@@ -91,6 +91,7 @@
 
 /* Reset all styles */
 * {
+    background-color: transparent;
     border: none;
     border-radius: 10px;
     min-height: 0;
@@ -99,7 +100,7 @@
 
 /* The whole bar */
 #waybar {
-    background-color: rgba(46, 52, 64, 0.7);
+    background-color: transparent;
     color: @fg;
     font-family: "Fira Code", "Font Awesome";
     font-size: 22px;
@@ -107,36 +108,33 @@
     border-radius: 0px;
 }
 
+/* Each module */
+#custom-wlogout,
+#taskbar,
+#tray,
+#workspaces,
+#memory
+#cpu,
+#clock {
+    background-color: @night0;
+}
+
 /* indicators */
 #memory,
 #cpu,
 #pulseaudio,
 #clock {
+    padding-right: 5px;
+    padding-left: 5px;
     border-radius: 0px;
     border-style: solid none solid none;
     border-color: @night1;
     border-width: 2px;
     margin-right: 0px;
     margin-left: 0px;
-
+    background-color: @night0;
 }
 
-/* Each module */
-#battery,
-/* #clock, */
-/* #cpu, */
-#custom-launcher,
-#custom-layout,
-#memory,
-#mode,
-#network,
-#temperature,
-#custom-pacman,
-#custom-weather,
-#custom-gpu,
-#tray,
-#language,
-#custom-wlogout,
 
 /* Each module that should blink */
 #mode,
@@ -228,7 +226,6 @@
 
 #workspaces button.active {
     color: @green;
-    padding: 0 0.4em;
     border-color: @green;
 }
 
@@ -289,12 +286,10 @@
     /* it's the most left indicator */
     border-radius: 10px 0px 0px 10px;
     border-style: solid none solid solid;
-    background: transparent;
     color: @blue;
 }
 
 #cpu {
-    background: transparent;
     color: @green;
 }
 #cpu.warning {
