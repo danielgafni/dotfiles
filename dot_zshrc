@@ -2,6 +2,11 @@
 export EDITOR=nvim
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export BROWSER=/usr/bin/google-chrome-stable
+export ZSH_CACHE_DIR=$HOME/.cache/zsh
+
+# needed for zsh completions
+autoload -Uz compinit
+compinit
 
 # User configuration
 

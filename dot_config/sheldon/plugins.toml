@@ -20,10 +20,13 @@ github = 'zsh-users/zsh-syntax-highlighting'
 [plugins.zsh-autosuggestions]
 github = 'zsh-users/zsh-autosuggestions'
 
-[plugins.poetry]
-local = '/home/dan/.config/zsh-plugins/poetry'
+[plugins.git]
+github = "ohmyzsh/ohmyzsh"
+dir = "plugins/git"
+#use = ["git.plugin.zsh"]
 
-# For example:
-#
-# [plugins.base16]
-# github = "chriskempson/base16-shell"
+[plugins.poetry]
+github = "ohmyzsh/ohmyzsh"
+dir = "plugins/poetry"
+#use = ["poetry.plugin.zsh"]
+
