@@ -1,4 +1,4 @@
-@import "../nord.scss";
+@import "../common/nord.scss";
 
 /** Global *******************************************/
 *{
@@ -69,3 +69,37 @@
 	font-size : 22px;
 	font-weight : normal;
 }
+
+/** Calendar **/
+
+.calendar_clock_hour {
+    color: #B48EAD;
+    font-size: 38px;
+}
+
+.calendar_clock_colon {
+    color: #EBCB8B;
+    font-size: 34px;
+}
+
+.calendar_clock_minute {
+    color: #8FBCBB;
+    font-size: 34px;
+}
+
+.calendar_month {
+    color: #B48EAD;
+    font-size: 34px;
+}
+
+.calendar_day {
+    color: #EBCB8B;
+    font-size: 42px;
+}
+
+.calendar_weekday {
+    color: #8FBCBB;
+    font-size: 38px;
+}
+
+

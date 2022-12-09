@@ -88,7 +88,7 @@
 
 ;; uptime
 (defwindow uptime :stacking "bg" :focusable "false" :screen 1 :monitor 0
-	    :geometry (geometry :x "50%" :y "1%" :width 200 :height 150)
+	    :geometry (geometry :x "90%" :y "90%" :width 200 :height 150)
 					(uptime))
 
 ;; ------------------- Weather --------------------
@@ -112,3 +112,23 @@
 (defwindow weather :stacking "bg" :focusable "false" :screen 1 :monitor 0
 	    :geometry (geometry :x "50%" :y "9%" :width 200 :height 200)
 					(weather))
+
+;; ------------------- Calendar --------------------
+
+(defpoll CALENDAR_INFO :interval "15s" :initial '{"year": "0000", "month": "00", "hour": "00", "minute": "00", "weekday": "Unk"}' `gaf calendar`)
+
+(defwidget custom-calendar []
+  (box :class "genwin"
+    (box :orientation "h" :spacing 10 :space-evenly "false" :vexpand "false" :hexpand "false"
+      (label :class "calendar_clock_hour" :halign "start" :text "${CALENDAR_INFO.hour}")
+      (label :class "calendar_clock_colon" :halign "start" :text ":")
+      (label :class "calendar_clock_minute" :halign "start" :text "${CALENDAR_INFO.minute}"))
+   (box :orientation "v" :spacing 10 :space-evenly "false" :vexpand "false" :hexpand "false"
+      (label :class "calendar_month" :halign "start" :text "${CALENDAR_INFO.month}")
+      (label :class "calendar_day" :halign "end" :text "${CALENDAR_INFO.day}")
+      (label :class "calendar_weekday" :halign "center" :text "${CALENDAR_INFO.weekday}"))))
+
+(defwindow calendar :stacking "bg" :focusable "false" :screen 1 :monitor 0
+  :geometry (geometry :x "40%" :y "1%" :width 200 :height 150)
+  (custom-calendar))
+

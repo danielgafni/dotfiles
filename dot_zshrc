@@ -1,9 +1,13 @@
-# If you come from bash you might have to change your $PATH.
 export EDITOR=nvim
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# ZSH settings
 export BROWSER=/usr/bin/google-chrome-stable
 export ZSH_CACHE_DIR=$HOME/.cache/zsh
-
+HISTFILE=~/.zsh_history
+HISTSIZE=1000
+SAVEHIST=1000
+setopt SHARE_HISTORY
 # needed for zsh completions
 autoload -Uz compinit
 compinit
