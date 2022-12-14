@@ -119,7 +119,7 @@
 
 (defwidget custom-calendar []
   (box :class "genwin"
-    (box :orientation "h" :spacing 10 :space-evenly "false" :vexpand "false" :hexpand "false"
+    (box :class "calendar_clock" :orientation "h" :spacing 10 :space-evenly "false" :vexpand "false" :hexpand "false"
       (label :class "calendar_clock_hour" :halign "start" :text "${CALENDAR_INFO.hour}")
       (label :class "calendar_clock_colon" :halign "start" :text ":")
       (label :class "calendar_clock_minute" :halign "start" :text "${CALENDAR_INFO.minute}"))
