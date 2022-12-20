@@ -4,22 +4,22 @@ This repository contains my personal configuration files for various Linux apps 
 
 The setup is made for Wayland with Hyprland (for Nvidia).
 
- - zsh  # shell
- - sheldon # shell plugin manager
- - neovim  # text editor
- - alacritty  # terminal emulator
- - kitty  # terminal emulator
- - zellij  # terminal multiplexer
- - starship  # terminal prompt
- - ranger  # terminal-based file manager
- - btop  # resource manager
- - waybar  # bar
- - wofi  # app launcher
- - hyprland  # tiling window manager & compositor
- - hyprpaper  # wallpaper manager
- - wlogout  # power menu
- - swaylock  # screen locker
- - mako  # notification daemon
+ - `zsh` - shell
+ - `sheldon` - shell plugin manager
+ - `neovim`  - text editor
+ - `alacritty`  - terminal emulator
+ - `kitty` - terminal emulator
+ - `zellij`  - terminal multiplexer
+ - `starship` - terminal prompt
+ - `ranger` - terminal-based file manager
+ - `btop` - resource manager
+ - `waybar` - bar
+ - `wofi` - app launcher
+ - `hyprland` - tiling window manager & compositor
+ - `hyprpaper` - wallpaper manager
+ - `wlogout` - power menu
+ - `swaylock` - screen locker
+ - `mako` - notification daemon
 
 All the colors & theming are Nord.
 

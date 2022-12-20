@@ -94,6 +94,7 @@
     background-color: transparent;
     border: none;
     border-radius: 10px;
+    border-width: 4px;
     min-height: 0;
     margin: 1px 6px 1px 6px;
 }
@@ -102,7 +103,7 @@
 #waybar {
     background-color: transparent;
     color: @fg;
-    font-family: "Fira Code", "Font Awesome";
+    font-family: "Hurmit Nerd Font", "Font Awesome";
     font-size: 22px;
     font-weight: bold;
     border-radius: 0px;
@@ -129,7 +130,6 @@
     border-radius: 0px;
     border-style: solid none solid none;
     border-color: @night1;
-    border-width: 2px;
     margin-right: 0px;
     margin-left: 0px;
     background-color: @night0;
@@ -186,14 +186,12 @@
     padding-right: 10px;
     color: @red;
     border-color: @night1;
-    border-width: 2px;
     border-style: solid;
 }
 
 /* taskbar */
 #taskbar {
     border-color: @night1;
-    border-width: 2px;
     border-style: solid;
 }
 
@@ -203,7 +201,6 @@
 
 #tray {
     border-color: @night1;
-    border-width: 2px;
     border-style: solid;
 }
 /* Workspaces stuff */
@@ -211,7 +208,6 @@
 #workspaces {
     margin-right: 10px;
     border-color: @night1;
-    border-width: 2px;
     border-style: solid;
 }
 

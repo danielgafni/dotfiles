@@ -5,8 +5,17 @@
 # Path to the config file
 # config=<config_file>
 
+# will put a screenshot in the background
+screenshot
+# displays clock in the ring
+clock
+# blurs the background screenshot
+effect-blur=7x5
+effect-vignette=0.5:0.5
+fade-in=0.5
+
 # Turn the screen into the given color instead of white
-color=2e3440ff
+color=2e3440b3
 
 # Enable debugging output
 # debug
@@ -56,17 +65,17 @@ caps-lock-bs-hl-color=d08770ff
 caps-lock-key-hl-color=ebcb8bff
 
 # Sets the font of the text
-font=Fira Code Nerd Mono
-font-size=16
+font=Hurmit Nerd Font
+font-size=48
 
 # Sets the indicator to show even if idle
 indicator-idle-visible
 
 # Sets the indicator radius (default: 50)
-indicator-radius=100
+indicator-radius=200
 
 # Sets the indicator thickness (default: 10)
-indicator-thickness=10
+indicator-thickness=20
 
 # FUTURE RELEASE
 # Sets the horizontal position of the indicator
@@ -95,7 +104,7 @@ inside-wrong-color=bf616aff
 key-hl-color=a3be8cff
 
 # Sets the background color of the box containing the layout text
-layout-bg-color=2e3440ff
+layout-bg-color=2e3440b3
 
 # Sets the color of the border of the box containing the layout text
 # layout-border-color=<rrggbb[aa]>

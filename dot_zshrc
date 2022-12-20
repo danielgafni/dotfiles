@@ -12,6 +12,10 @@ setopt SHARE_HISTORY
 autoload -Uz compinit
 compinit
 
+# aliases
+alias zj="zellij"
+
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -34,13 +38,6 @@ compinit
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 
 # Add pyenv executable to PATH and
 # enable shims by adding the following
@@ -64,4 +61,9 @@ eval "$(sheldon source)"
 
 export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring
 
-alias zj="zellij"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/dan/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/dan/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/dan/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/dan/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
