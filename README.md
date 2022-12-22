@@ -35,13 +35,13 @@ or
 ./install.sh
 ```
 
-To install the system packages, run:
+Install system dependencies (for Arch Linux):
 
 ```shell
 paru -S zsh neovim kitty bat ranger ranger_devicons-git zellij-git starship-git btop nerd-fonts-fira-code nerd-fonts-complete-starship nordic-theme nordzy-cursors nordzy-icon-theme-git grim-git slurp sway hyprland-nvidia-git hyprpaper-git wlogout-git swayidle swaylock-effects-git wlrobs-hg mako-git waybar-hyprland-git xdg-desktop-portal xdg-desktop-portal-hyprland-git 
 ```
 
-It's extremely important to use `xdg-desktop-portal-hyprland-git` as it enables features like screensharing any window. 
+It's extremely important to use `xdg-desktop-portal-hyprland-git` as it enables features like screensharing any window or enabling sound for some apps. 
 
 
 # Screenshots
@@ -50,7 +50,7 @@ It's extremely important to use `xdg-desktop-portal-hyprland-git` as it enables 
 
 # `gaf`
 
-`gaf` is my CLI tool made for running commands related to these dotfiles. It's currently under development.
+[`gaf`](https://github.com/danielgafni/gaf) is my CLI tool made for running commands related to these dotfiles.
 
 # Wallpapers
 

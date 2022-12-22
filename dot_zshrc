@@ -11,6 +11,14 @@ setopt SHARE_HISTORY
 # needed for zsh completions
 autoload -Uz compinit
 compinit
+zstyle ':completion:*' menu select
+fpath+=~/.zfunc
+
+
+# ctrl+left/right arrow jumps to next word
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
 
 # aliases
 alias zj="zellij"
