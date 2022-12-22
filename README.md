@@ -43,6 +43,7 @@ paru -S zsh neovim kitty bat ranger ranger_devicons-git zellij-git starship-git 
 
 It's extremely important to use `xdg-desktop-portal-hyprland-git` as it enables features like screensharing any window or enabling sound for some apps. 
 
+Use the [launcher script](hyprland_nvidia_launcher.sh) script to start Hyprland.
 
 # Screenshots
 

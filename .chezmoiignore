@@ -4,3 +4,4 @@ screenshots/
 Cargo.toml
 Cargo.lock
 src
+hyprland_nvidia_launcher.sh
