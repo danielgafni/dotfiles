@@ -60,8 +60,9 @@ eval "$(pyenv init -)"
 
 export PATH="$HOME/.local/bin:$PATH"
 
-export PATTH="$HOME/.cargo/env:$PATH"
+export PATH="$HOME/.cargo/env:$PATH"
 
+export PATH="$HOME/.yarn/bin:$PATH"
 eval "$(starship init zsh)"
 
 # sheldon is a zsh plugin manager

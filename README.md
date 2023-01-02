@@ -61,3 +61,5 @@ Use the [launcher script](hyprland_nvidia_launcher.sh) script to start Hyprland.
 
  - [Default pulseaudio devices](https://askubuntu.com/questions/14077/how-can-i-change-the-default-audio-device-from-command-line)
 
+
+`chronyd`
