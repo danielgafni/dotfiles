@@ -49,7 +49,7 @@ Use the [launcher script](hyprland_nvidia_launcher.sh) script to start Hyprland.
 
 # Screenshots
 
-![sceenlock](./screenshots/screenlock.png)
+![swaylock](./screenshots/swaylock.png)
 ![desktop](./screenshots/desktop.png)
 
 # `gaf`
