@@ -158,5 +158,6 @@ lua <<EOF
   require'lspconfig'.yamlls.setup{}
   require'lspconfig'.pyright.setup{}
   require'lspconfig'.rust_analyzer.setup{}
+  require'lspconfig'.dockerls.setup{}
 
 EOF

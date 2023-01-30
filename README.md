@@ -2,17 +2,16 @@
 
 This repository contains my personal configuration files for various Linux apps & tools.
 
-The setup is made for Wayland with Hyprland (for Nvidia).
+This is a Wayland with Hyprland (Nvidia) setup for a single 4k 16:9 monitor.
 
  - `zsh` - shell
  - `sheldon` - shell plugin manager
  - `neovim`  - text editor
- - `alacritty`  - terminal emulator
  - `kitty` - terminal emulator
  - `zellij`  - terminal multiplexer
  - `starship` - terminal prompt
  - `ranger` - terminal-based file manager
- - `btop` - resource manager
+ - `btop` - resources monitor
  - `waybar` - bar
  - `wofi` - app launcher
  - `hyprland` - tiling window manager & compositor
@@ -20,8 +19,11 @@ The setup is made for Wayland with Hyprland (for Nvidia).
  - `wlogout` - power menu
  - `swaylock` - screen locker
  - `mako` - notification daemon
+ - `eww` - widgets
 
 All the colors & theming are Nord.
+
+The setup contains some `eww` widgets (like weather, calendar and uptime), they are currently in progress.
 
 # Installation
 
@@ -47,7 +49,8 @@ Use the [launcher script](hyprland_nvidia_launcher.sh) script to start Hyprland.
 
 # Screenshots
 
-![terminals](./screenshots/terminals.png)
+![sceenlock](./screenshots/screenlock.png)
+![desktop](./screenshots/desktop.png)
 
 # `gaf`
 
