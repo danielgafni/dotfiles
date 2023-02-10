@@ -159,5 +159,11 @@ lua <<EOF
   require'lspconfig'.pyright.setup{}
   require'lspconfig'.rust_analyzer.setup{}
   require'lspconfig'.dockerls.setup{}
+  
+  require'lspconfig'.terraform_lsp.setup{}
 
 EOF
+
+autocmd BufWritePre *.tfvars lua vim.lsp.buf.format()
+autocmd BufWritePre *.tf lua vim.lsp.buf.format()
+
