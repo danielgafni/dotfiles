@@ -32,4 +32,6 @@ symbol = " "
 [rust]
 symbol = " "
 
+[kubernetes]
+disabled = false
 
