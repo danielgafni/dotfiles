@@ -75,6 +75,11 @@ Plug 'Shougo/deol.nvim'      " recommended to use together.
 " treesitter - better language parsing
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
+
+" GitHub Copilot
+" actiave with :Copilot setup
+Plug 'github/copilot.vim'
+
 call plug#end()
 
 colorscheme nord
