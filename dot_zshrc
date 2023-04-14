@@ -22,7 +22,7 @@ bindkey "^[[1;5D" backward-word
 
 # aliases
 alias zj="zellij"
-
+alias k="kubectl"
 
 # User configuration
 
@@ -76,6 +76,8 @@ if [ -f '/home/dan/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/dan
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/dan/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/dan/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
 # for Dagster
 export DAGSTER_HOME=$HOME/.dagster_home
