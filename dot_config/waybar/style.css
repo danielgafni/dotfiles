@@ -1,3 +1,6 @@
+@import "themes/catppuccin-machiato.css";
+
+
 @keyframes blink-warning {
     70% {
         color: @light;
@@ -26,68 +29,12 @@
  * -------------------------------------------------------------------------- */
 
 /* COLORS */
-
-/* Nord */
-@define-color light #D8DEE9;
-/*@define-color dark @nord_dark_font;*/
-@define-color warning #ebcb8b;
-@define-color critical #BF616A;
-@define-color mode #434C5E;
-@define-color layout #5e81ac;
-@define-color battery #88c0d0;
-@define-color backlight #434C5E;
-
-/* Polar Night */
-@define-color nord0 #2E3440;
-@define-color nord1 #3B4252;
-@define-color nord2 #434C5E;
-@define-color nord3 #4C566A;
-/* Snow Storm */
-@define-color nord4 #D8DEE9;
-@define-color nord5 #E5E9F0;
-@define-color nord6 #ECEFF4;
-/* Frost */
-@define-color nord7 #8FBCBB;
-@define-color nord8 #88C0D0;
-@define-color nord9 #81A1C1;
-@define-color nord10 #5E81AC;
-/* Aurora */
-@define-color nord11 #BF616A;
-@define-color nord12 #D08770;
-@define-color nord13 #EBCB8B;
-@define-color nord14 #A3BE8C;
-@define-color nord15 #B48EAD;
-
 /* Quick Access */
-@define-color bg rgba(46, 52, 64, 0.7);  /* nord0 but with transparency */
-@define-color fg @nord4;
-
-@define-color red @nord11;
-@define-color orange @nord12;
-@define-color yellow @nord13;
-@define-color green @nord14;
-@define-color blue @nord10;
-@define-color violet @nord15;
-
-@define-color night0 @nord0;
-@define-color night1 @nord1;
-@define-color night2 @nord2;
-@define-color night3 @nord3;
-
-@define-color snow0 @nord4;
-@define-color snow1 @nord5;
-@define-color snow2 @nord6;
-
-@define-color frost0 @nord7;
-@define-color frost1 @nord8;
-@define-color frost2 @nord9;
-@define-color frost3 @nord10;
-
-@define-color aurora0 @nord11;
-@define-color aurora1 @nord12;
-@define-color aurora2 @nord13;
-@define-color aurora3 @nord14;
-@define-color aurora4 @nord15;
+@define-color bg rgba(36, 39, 58, 0.7);  /* background but with transparency */
+@define-color fg @text;
+@define-color light @subtext1;
+@define-color warning @yellow;
+@define-color critical @red;
 
 /* Reset all styles */
 * {
@@ -117,7 +64,7 @@
 #memory
 #cpu,
 #clock {
-    background-color: @night0;
+    background-color: @bg;
 }
 
 /* indicators */
@@ -129,10 +76,10 @@
     padding-left: 5px;
     border-radius: 0px;
     border-style: solid none solid none;
-    border-color: @night1;
+    border-color: @overlay0;
     margin-right: 0px;
     margin-left: 0px;
-    background-color: @night0;
+    background-color: @surface0;
 }
 
 
@@ -170,7 +117,7 @@
 #temperature.warning,
 #battery.warning {
     background: @warning;
-    color: @nord_dark_font;
+    color: @yellow;
 }
 
 /* Each warning that should blink */
@@ -185,29 +132,29 @@
     padding: 7px;
     padding-right: 10px;
     color: @red;
-    border-color: @night1;
+    border-color: @overlay1;
     border-style: solid;
 }
 
 /* taskbar */
 #taskbar {
-    border-color: @night1;
+    border-color: @overlay1;
     border-style: solid;
 }
 
 #taskbar button:hover {
-    background-color: @frost2;
+    background-color: @flamingo;
 }
 
 #tray {
-    border-color: @night1;
+    border-color: @overlay1;
     border-style: solid;
 }
 /* Workspaces stuff */
 
 #workspaces {
     margin-right: 10px;
-    border-color: @night1;
+    border-color: @overlay1;
     border-style: solid;
 }
 
@@ -217,7 +164,7 @@
 }
 
 #workspaces button:hover {
-    background-color: @frost2;
+    background-color: @flamingo;
 }
 
 #workspaces button.active {
@@ -306,7 +253,7 @@
 }
 
 #pulseaudio {
-    color: @violet;
+    color: @mauve;
 }
 
 #pulseaudio.muted {
@@ -314,7 +261,7 @@
     /* No styles */
 }
 #pulseaudio.source-muted {
-    color: @orange;
+    color: @peach;
     /* No styles */
 }
 
@@ -325,6 +272,6 @@
     color: @frost0;
 }
 #clock.time {
-    color: @frost0;
+    color: @teal;
 }
 

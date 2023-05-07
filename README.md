@@ -21,7 +21,7 @@ This is a Wayland with Hyprland (Nvidia) setup for a single 4k 16:9 monitor.
  - `mako` - notification daemon
  - `eww` - widgets
 
-All the colors & theming are Nord.
+The color theme is Catppuccin Macchiato. For other color schemes (Nord), check the branches. 
 
 The setup contains some `eww` widgets (like weather, calendar and uptime), they are currently in progress.
 
@@ -46,6 +46,12 @@ paru -S zsh neovim kitty bat ranger ranger_devicons-git zellij-git starship-git 
 It's extremely important to use `xdg-desktop-portal-hyprland-git` as it enables features like screensharing any window or enabling sound for some apps. 
 
 Use the [launcher script](hyprland_nvidia_launcher.sh) script to start Hyprland.
+
+Catppuccin packages:
+
+```shell
+paru -S catppuccin-cursors-macchiato catppuccin-gtk-theme-macchiato
+```
 
 # Screenshots
 
