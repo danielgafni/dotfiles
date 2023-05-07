@@ -4,49 +4,92 @@
     font-size: 22px;
 }
 
+/* Macchiato Flamingo */
+@define-color accent #f0c6c6;
+@define-color txt #cad3f5;
+@define-color bg #24273a;
+@define-color bg2 #494d64;
 
-@define-color white_front #D8DEE9;
+ /* Window */
+ window {
+    margin: 0px;
+    padding: 10px;
+    border: 3px solid @accent;
+    border-radius: 7px;
+    background-color: @bg;
+    animation: slideIn 0.5s ease-in-out both;
+ }
 
-window {
-	background-color: #3B4252;
-    border-radius: 10px
-}
+ /* Slide In */
+ @keyframes slideIn {
+    0% {
+       opacity: 0;
+    }
 
-#input {
-	margin: 5px;
-	border-radius: 0px;
-	border: none;
-	background-color: #3B4252;
-	color: @white_front;
-}
+    100% {
+       opacity: 1;
+    }
+ }
 
-#inner-box {
-	background-color: #383C4A;
-}
+ /* Inner Box */
+ #inner-box {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background-color: @bg;
+    animation: fadeIn 0.5s ease-in-out both;
+ }
 
-#outer-box {
-	margin: 2px;
-	padding: 10px;
-	background-color: #383C4A;
-}
+ /* Fade In */
+ @keyframes fadeIn {
+    0% {
+       opacity: 0;
+    }
 
-#scroll {
-	margin: 5px;
-}
+    100% {
+       opacity: 1;
+    }
+ }
 
-#text {
-	padding: 4px;
-	color: @white_front;
-}
+ /* Outer Box */
+ #outer-box {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background-color: @bg;
+ }
 
-#entry:nth-child(even){
-	background-color: #404552;
-}
+ /* Scroll */
+ #scroll {
+    margin: 0px;
+    padding: 10px;
+    border: none;
+ }
 
-#entry:selected {
-	background-color: #4C566A;
-}
+ /* Input */
+ #input {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    color: @accent;
+    background-color: @bg2;
+    animation: fadeIn 0.5s ease-in-out both;
+ }
 
-#text:selected {
-	background: transparent;
-}
+ /* Text */
+ #text {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    color: @txt;
+    animation: fadeIn 0.5s ease-in-out both;
+ }
+
+ /* Selected Entry */
+ #entry:selected {
+   background-color: @accent;
+ }
+
+ #entry:selected #text {
+    color: @bg;
+ }

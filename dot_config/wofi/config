@@ -2,7 +2,7 @@ width=600
 height=1200
 location=center
 show=drun
-prompt=Search...
+prompt=Hmm...
 filter_rate=100
 allow_markup=true
 no_actions=true
@@ -13,4 +13,6 @@ insensitive=true
 allow_images=true
 image_size=40
 gtk_dark=true
+always_parse_args=true
+print_command=true
 
