@@ -82,5 +82,3 @@ export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 # for Dagster
 export DAGSTER_HOME=$HOME/.dagster_home
 
-# cargo sparse registry
-export CARGO_REGISTRIES_CRATES_IO_PROTOCOL=sparse

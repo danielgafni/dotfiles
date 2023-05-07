@@ -50,6 +50,9 @@ Plug 'hashivim/vim-terraform'
 " eww yuck            
 Plug 'elkowar/yuck.vim'
 
+Plug 'NoahTheDuke/vim-just'
+Plug 'IndianBoy42/tree-sitter-just'
+
 " nvim-cmp - autocompletion
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
