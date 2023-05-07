@@ -38,7 +38,7 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 
 call plug#begin()
 
-Plug 'arcticicestudio/nord-vim'
+Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
@@ -85,7 +85,78 @@ Plug 'github/copilot.vim'
 
 call plug#end()
 
-colorscheme nord
+let g:catppuccin_flavour = "macchiato" " latte, frappe, macchiato, mocha
+
+lua << EOF
+require("catppuccin").setup({
+    integrations = {
+		aerial = false,
+		barbar = false,
+		beacon = false,
+		cmp = true,
+		coc_nvim = false,
+		dashboard = true,
+		fern = false,
+		fidget = false,
+		gitgutter = false,
+		gitsigns = true,
+		hop = false,
+		illuminate = false,
+		leap = false,
+		lightspeed = false,
+		lsp_saga = false,
+		lsp_trouble = false,
+		markdown = true,
+		mini = false,
+		neogit = false,
+		neotree = false,
+		notify = true,
+		nvimtree = true,
+		overseer = false,
+		pounce = false,
+		symbols_outline = false,
+		telekasten = false,
+		telescope = true,
+		treesitter = true,
+		treesitter_context = false,
+		ts_rainbow = false,
+		vim_sneak = false,
+		vimwiki = false,
+		which_key = false,
+
+		-- Special integrations, see https://github.com/catppuccin/nvim#special-integrations
+		dap = {
+			enabled = false,
+			enable_ui = false,
+		},
+		indent_blankline = {
+			enabled = true,
+			colored_indent_levels = false,
+		},
+		native_lsp = {
+			enabled = true,
+			virtual_text = {
+				errors = { "italic" },
+				hints = { "italic" },
+				warnings = { "italic" },
+				information = { "italic" },
+			},
+			underlines = {
+				errors = { "underline" },
+				hints = { "underline" },
+				warnings = { "underline" },
+				information = { "underline" },
+			},
+		},
+		navic = {
+			enabled = false,
+			custom_bg = "NONE",
+		},
+	},
+})
+EOF
+
+colorscheme catppuccin
 
 " nvim-cmp
 set completeopt=menu,menuone,noselect
