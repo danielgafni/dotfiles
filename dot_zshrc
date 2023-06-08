@@ -5,8 +5,8 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export BROWSER=/usr/bin/google-chrome-stable
 export ZSH_CACHE_DIR=$HOME/.cache/zsh
 HISTFILE=~/.zsh_history
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=5000
+SAVEHIST=5000
 setopt SHARE_HISTORY
 # needed for zsh completions
 autoload -Uz compinit

@@ -33,5 +33,5 @@ symbol = " "
 symbol = " "
 
 [kubernetes]
-disabled = false
+disabled = true
 
