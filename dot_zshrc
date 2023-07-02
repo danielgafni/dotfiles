@@ -82,3 +82,7 @@ export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 # for Dagster
 export DAGSTER_HOME=$HOME/.dagster_home
 
+export POETRY_DYNAMIC_VERSIONING_COMMANDS=build,publish
+
+export SOPS_PGP_FP="E5C5C17946497B69"
+
