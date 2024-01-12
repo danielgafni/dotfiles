@@ -85,4 +85,4 @@ export DAGSTER_HOME=$HOME/.dagster_home
 export POETRY_DYNAMIC_VERSIONING_COMMANDS=build,publish
 
 export SOPS_PGP_FP="72165858C879B2CB"
-
+export PATH=~/.npm-global/bin:$PATH
