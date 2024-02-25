@@ -40,7 +40,7 @@ or
 Install system dependencies (for Arch Linux):
 
 ```shell
-paru -S zsh neovim kitty bat ranger ranger_devicons-git zellij-git starship-git btop nerd-fonts-fira-code nerd-fonts-complete-starship nordic-theme nordzy-cursors nordzy-icon-theme-git grim-git slurp sway hyprland-nvidia-git hyprpaper-git wlogout-git swayidle swaylock-effects-git wlrobs-hg mako-git waybar-hyprland-git xdg-desktop-portal xdg-desktop-portal-hyprland-git 
+paru -S zsh neovim kitty bat ranger ranger_devicons-git zellij-git starship-git btop nerd-fonts-fira-code nerd-fonts-complete-starship nordic-theme nordzy-cursors nordzy-icon-theme-git grim-git slurp sway hyprland hyprpaper-git wlogout-git swayidle swaylock-effects-git wlrobs-hg mako-git waybar xdg-desktop-portal xdg-desktop-portal-hyprland-git 
 ```
 
 It's extremely important to use `xdg-desktop-portal-hyprland-git` as it enables features like screensharing any window or enabling sound for some apps. 
