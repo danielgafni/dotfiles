@@ -1,3 +1,8 @@
+> [!Warning]
+> This repo is no longer maintained.
+> I've [switched](https://github.com/danielgafni/nixos) completely to NixOS because my Arch setup got fried when my neighbor accidentally drilled into my power cable. 
+> RIP
+
 # Dotfiles
 
 This repository contains my personal configuration files for various Linux apps & tools.
