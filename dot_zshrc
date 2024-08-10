@@ -50,13 +50,13 @@ alias k="kubectl"
 # Add pyenv executable to PATH and
 # enable shims by adding the following
 # to ~/.profile and ~/.zprofile:
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
+#export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+#export PYENV_ROOT="$HOME/.pyenv"
+#export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init --path)"
 # Load pyenv into the shell by adding
 # the following to ~/.zshrc:
-eval "$(pyenv init -)"
+#eval "$(pyenv init -)"
 
 export PATH="$HOME/.local/bin:$PATH"
 
@@ -86,3 +86,7 @@ export POETRY_DYNAMIC_VERSIONING_COMMANDS=build,publish
 
 export SOPS_PGP_FP="72165858C879B2CB"
 export PATH=~/.npm-global/bin:$PATH
+
+export PYCHARM_VM_OPTIONS=/home/$USER/.config/pycharm_vm_options.conf
+source /usr/share/nvm/init-nvm.sh
+
