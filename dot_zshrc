@@ -89,4 +89,7 @@ export PATH=~/.npm-global/bin:$PATH
 export PYCHARM_VM_OPTIONS=/home/$USER/.config/pycharm_vm_options.conf
 source /usr/share/nvm/init-nvm.sh
 
+source $HOME/.cargo/env
+
+eval "$(zoxide init --cmd cd zsh)"
 eval "$(starship init zsh)"
